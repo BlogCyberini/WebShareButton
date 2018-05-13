@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+GitHub: HenriqueIni
+https://www.blogcyberini.com/
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Botão do Google+</title>
+    <!--
+        A imagem do botão está em Base64 e foi obtida no IconFinder (https://www.iconfinder.com/icons/764926/google_media_plus_social_square_icon)
+        Se preferir, coloque este CSS num arquivo externo.        
+    -->
+    <style>
+        .google-plus-share-button{
+            display: inline-block;            
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            background-size: 100% 100%; /* ou 'contain' */
+            background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI2MHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA2MCA2MCIgd2lkdGg9IjYwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZXNjLz48ZGVmcy8+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBpZD0ic29pY2FsIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+PGcgaWQ9InNvY2lhbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ3My4wMDAwMDAsIC0xMzguMDAwMDAwKSI+PGcgaWQ9InNsaWNlcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTczLjAwMDAwMCwgMTM4LjAwMDAwMCkiLz48ZyBmaWxsPSIjQ0E0NzM4IiBpZD0ic3F1YXJlLWZsYXQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3My4wMDAwMDAsIDEzOC4wMDAwMDApIj48cGF0aCBkPSJNMzAyLjk5NTkzNywwIEwzNTcuMDA0MDYzLDAgQzM1OC42NTg2NzMsMCAzNjAsMS4zMzczMDk3NCAzNjAsMi45OTU5Mzc0MyBMMzYwLDU3LjAwNDA2MjYgQzM2MCw1OC42NTg2NzMxIDM1OC42NjI2OSw2MCAzNTcuMDA0MDYzLDYwIEwzMDIuOTk1OTM3LDYwIEMzMDEuMzQxMzI3LDYwIDMwMCw1OC42NjI2OTAzIDMwMCw1Ny4wMDQwNjI2IEwzMDAsMi45OTU5Mzc0MyBDMzAwLDEuMzQxMzI2ODggMzAxLjMzNzMxLDAgMzAyLjk5NTkzNywwIFoiIGlkPSJzcXVhcmUtNCIvPjwvZz48ZyBmaWxsPSIjRkZGRkZGIiBpZD0iaWNvbiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTgyLjAwMDAwMCwgMTUwLjAwMDAwMCkiPjxwYXRoIGQ9Ik0zMzQuMTI1MjE0LDE2LjU1NzQwMTIgTDMzNC4xMjUyMTQsMTIuOTQ4ODU4NSBMMzMxLjU1MjMxNiwxMi45NDg4NTg1IEwzMzEuNTUyMzE2LDE2LjU1NzQwMTIgTDMyNy44NDczNDEsMTYuNTU3NDAxMiBMMzI3Ljg0NzM0MSwxOS4xMzQ5MzE3IEwzMzEuNTUyMzE2LDE5LjEzNDkzMTcgTDMzMS41NTIzMTYsMjIuODQ2NTc1NiBMMzM0LjEyNTIxNCwyMi44NDY1NzU2IEwzMzQuMTI1MjE0LDE5LjEzNDkzMTcgTDMzNy43MjcyNzMsMTkuMTM0OTMxNyBMMzM3LjcyNzI3MywxNi41NTc0MDEyIEwzMzQuMTI1MjE0LDE2LjU1NzQwMTIgWiBNMzE1LjM5NDUxMSwxNi4zNTExOTg4IEwzMTUuMzk0NTExLDIwLjQ3NTI0NzUgQzMxNS4zOTQ1MTEsMjAuNDc1MjQ3NSAzMTkuMzg4MDYyLDIwLjQ2OTg4NjMgMzIxLjAxNDEzNCwyMC40Njk4ODYzIEMzMjAuMTMzNTg1LDIzLjE0MzQwNCAzMTguNzY0MzkxLDI0LjU5OTI5NjMgMzE1LjM5NDUxMSwyNC41OTkyOTYzIEMzMTEuOTg0MTg1LDI0LjU5OTI5NjMgMzA5LjMyMjQ3LDIxLjgyOTY4ODIgMzA5LjMyMjQ3LDE4LjQxMzIyMzEgQzMwOS4zMjI0NywxNC45OTY3NTggMzExLjk4NDE4NSwxMi4yMjcxNSAzMTUuMzk0NTExLDEyLjIyNzE1IEMzMTcuMTk3NTk5LDEyLjIyNzE1IDMxOC4zNjIwOTMsMTIuODYyMDQ3MyAzMTkuNDMwMjU3LDEzLjc0Njk2NTEgQzMyMC4yODUyODMsMTIuODkwNDAwMSAzMjAuMjEzODU5LDEyLjc2ODMyODMgMzIyLjM4OTE5NCwxMC43MTAzMjQ5IEMzMjAuNTQyNTczLDkuMDI2NDc1NzQgMzE4LjA4ODIzMyw4IDMxNS4zOTQ1MTEsOCBDMzA5LjY1Mzc1Niw4IDMwNSwxMi42NjIxMzQgMzA1LDE4LjQxMzIyMzEgQzMwNSwyNC4xNjQyMDkxIDMwOS42NTM3NTYsMjguODI2NDQ2MyAzMTUuMzk0NTExLDI4LjgyNjQ0NjMgQzMyMy45NzUzMzQsMjguODI2NDQ2MyAzMjYuMDcyNjU5LDIxLjM0MTI5NzggMzI1LjM3NzM1OCwxNi4zNTExOTg4IEwzMTUuMzk0NTExLDE2LjM1MTE5ODggWiIgaWQ9Imdvb2dsZV9wbHVzIi8+PC9nPjwvZz48L2c+PC9zdmc+"); /*Base 64 Icon by Xinh Studio*/
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="" id="google-plus-share-btt" rel="nofollow" target="_blank" class="google-plus-share-button"></a>
+    
+    <!-- Você pode colocar este script num arquivo externo -->
+    <script type="text/javascript">
+        //Constrói a URL depois que o DOM estiver pronto
+        document.addEventListener("DOMContentLoaded", function() {
+            var url = encodeURIComponent(window.location.href);
+            var idioma = "pt-BR";
+            //altera a URL do botão
+            document.getElementById("google-plus-share-btt").href = "https://plus.google.com/share?url=" + url + "&hl=" + idioma;
+        }, false);
+    </script>
+</body>
+
+</html>
