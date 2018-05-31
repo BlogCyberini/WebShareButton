@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+GitHub: HenriqueIni
+https://www.blogcyberini.com/
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Botão do Pinterest</title>
+    <!--
+        A imagem do botão está em Base64 e foi obtida no IconFinder (https://www.iconfinder.com/icons/764968/media_pinterest_social_square_icon)
+        Se preferir, coloque este CSS num arquivo externo.        
+    -->
+    <style>
+        .pinterest-share-button{
+            display: inline-block;            
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            background-size: 100% 100%; /* ou 'contain' */
+            background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI2MHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA2MCA2MCIgd2lkdGg9IjYwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZXNjLz48ZGVmcy8+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBpZD0ic29pY2FsIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+PGcgaWQ9InNvY2lhbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTY3My4wMDAwMDAsIC0xMzguMDAwMDAwKSI+PGcgaWQ9InNsaWNlcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTczLjAwMDAwMCwgMTM4LjAwMDAwMCkiLz48ZyBmaWxsPSIjQ0E0NzM4IiBpZD0ic3F1YXJlLWZsYXQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3My4wMDAwMDAsIDEzOC4wMDAwMDApIj48cGF0aCBkPSJNNTAyLjk5NTkzNywwIEw1NTcuMDA0MDYzLDAgQzU1OC42NTg2NzMsMCA1NjAsMS4zMzczMDk3NCA1NjAsMi45OTU5Mzc0MyBMNTYwLDU3LjAwNDA2MjYgQzU2MCw1OC42NTg2NzMxIDU1OC42NjI2OSw2MCA1NTcuMDA0MDYzLDYwIEw1MDIuOTk1OTM3LDYwIEM1MDEuMzQxMzI3LDYwIDUwMCw1OC42NjI2OTAzIDUwMCw1Ny4wMDQwNjI2IEw1MDAsMi45OTU5Mzc0MyBDNTAwLDEuMzQxMzI2ODggNTAxLjMzNzMxLDAgNTAyLjk5NTkzNywwIFoiIGlkPSJzcXVhcmUtNiIvPjwvZz48ZyBmaWxsPSIjRkZGRkZGIiBpZD0iaWNvbiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTgyLjAwMDAwMCwgMTUwLjAwMDAwMCkiPjxwYXRoIGQ9Ik01MjMuNzU5NDUzLDI3LjA4NDQwMTEgQzUzMC4zNjUwNjEsMjcuMDg0NDAxMSA1MzQuODQ2MTU0LDIwLjkzNzA0OTMgNTM0Ljg0NjE1NCwxMi43MDgzMTA2IEM1MzQuODQ2MTU0LDYuNDg3OTAxMjUgNTI5LjY4MzI5NiwwLjY5MjMwNzY5MiA1MjEuODM4NzMyLDAuNjkyMzA3NjkyIEM1MTIuMDc2MzkzLDAuNjkyMzA3NjkyIDUwNy4xNTM4NDYsNy44Mzc1MTA2IDUwNy4xNTM4NDYsMTMuNzk1NzU0OCBDNTA3LjE1Mzg0NiwxNy40MDM1MzIxIDUwOC40OTA4NzEsMjAuNjEzMjUxMyA1MTEuMzYxNjQ0LDIxLjgwOTUzMDEgQzUxMS44MzE5NTksMjIuMDA1NTUyNiA1MTIuMjUzMzg3LDIxLjgxNTg0MzcgNTEyLjM5MDMyOSwyMS4yODQ1OTg1IEM1MTIuNDgzOTc5LDIwLjkxNjMwNDYgNTEyLjcxMDQ0OSwxOS45ODczMDE5IDUxMi44MDg4MTEsMTkuNjAwOTY5MSBDNTEyLjk0NjYzNywxOS4wNzQ4MzQ5IDUxMi44OTM2MjcsMTguODkwNTM3NiA1MTIuNTEzNzI0LDE4LjQzMTc0ODYgQzUxMS42ODY3NzEsMTcuNDM0MTk4MiA1MTEuMTU5MDI5LDE2LjE0NTMxOTcgNTExLjE1OTAyOSwxNC4zMTc2Nzk5IEM1MTEuMTU5MDI5LDkuMDE3MjUzNzcgNTE1LjA0MTk5Niw0LjI3MjEyNDcgNTIxLjI3NDc2Nyw0LjI3MjEyNDcgQzUyNi43OTEwMjQsNC4yNzIxMjQ3IDUyOS44MjQwNjYsNy43MTMwNDIyOSA1MjkuODI0MDY2LDEyLjMxMDU1MzEgQzUyOS44MjQwNjYsMTguMzU4MzkwNSA1MjcuMjAyNDM4LDIzLjQ2Mjc5NCA1MjMuMzA5NDU5LDIzLjQ2Mjc5NCBDNTIxLjE1OTAyOSwyMy40NjI3OTQgNTE5LjU1MTM2MSwyMS42NDgwODIgNTIwLjA2NjE0NCwxOS40MjI2ODQ4IEM1MjAuNjgyNTMsMTYuNzY1NTU2OCA1MjEuODgwNTUxLDEzLjg5Njc3MjYgNTIxLjg4MDU1MSwxMS45Nzg2Mzc2IEM1MjEuODgwNTUxLDEwLjI2MjUzODIgNTIwLjk3NzkxMyw4LjgyOTM0ODcxIDUxOS4xMDkwMjMsOC44MjkzNDg3MSBDNTE2LjkxMTE3OSw4LjgyOTM0ODcxIDUxNS4xNDYyNDgsMTEuMTUwOTUzNCA1MTUuMTQ2MjQ4LDE0LjI1OTM1NDIgQzUxNS4xNDYyNDgsMTYuMjM5MTIyIDUxNS44MDI2ODYsMTcuNTc4NTA5MyA1MTUuODAyNjg2LDE3LjU3ODUwOTMgQzUxNS44MDI2ODYsMTcuNTc4NTA5MyA1MTMuNTUzNTk5LDI3LjMwNTM3NzUgNTEzLjE1ODY3NiwyOS4wMDgyNDg0IEM1MTIuODAwNTY1LDMwLjU1ODk5MTMgNTEyLjc0Njk2NywzMi4yNjMzNjU0IDUxMi43OTczMjYsMzMuNzAzNzcwNSBDNTEyLjk0NzgxNSwzNC45OTU5NTYxIDUxNC4xOTk0MzUsMzYuMDQ4MjI0NCA1MTUuMjg1MjUyLDM0LjYzMDY2ODYgQzUxNi4wNDg1OTIsMzMuMzg1MDgzNSA1MTYuODY5MzYsMzEuODEyMDkyNiA1MTcuMjk0MDI4LDMwLjIzNTQ5MzkgQzUxNy41NDcyOTcsMjkuMzAyNTgyOCA1MTguNzQwMDE2LDI0LjQ2OTk2NTIgNTE4Ljc0MDAxNiwyNC40Njk5NjUyIEM1MTkuNDU0NzY1LDI1Ljg2MDE2MiA1MjEuNTQxMjg5LDI3LjA4NDQwMTEgNTIzLjc1OTQ1MywyNy4wODQ0MDExIFoiIGlkPSJwaW50ZXJlc3QiLz48L2c+PC9nPjwvZz48L3N2Zz4="); /*Base 64 Icon by Xinh Studio*/
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="" id="pinterest-share-btt" rel="nofollow" target="_blank" class="pinterest-share-button"></a>
+    
+    <!-- Você pode colocar este script num arquivo externo -->
+    <script type="text/javascript">
+        //Constrói a URL depois que o DOM estiver pronto
+        document.addEventListener("DOMContentLoaded", function() {
+            var url = encodeURIComponent(window.location.href);
+            
+            //tenta obter o conteúdo da meta tag description
+            var desc = document.querySelector("meta[name='description']");            
+            desc = (!!desc)? desc.getAttribute("content") : null;
+            
+            //se a meta tag description estiver ausente...
+            if(!desc){
+                //...tenta obter o conteúdo da meta tag og:description
+                desc = document.querySelector("meta[property='og:description']");
+                desc = (!!desc)? desc.getAttribute("content") : null;
+            }
+            
+            //metas tags description e og:description ausentes
+            if(!desc){
+                //obtém title
+                desc = document.title;
+            }
+            
+            //altera a URL do botão
+            document.getElementById("pinterest-share-btt").href = "https://www.pinterest.com/pin/create/button/?url="+url+"&description="+encodeURIComponent(desc);
+        }, false);
+    </script>
+</body>
+
+</html>
