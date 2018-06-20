@@ -47,7 +47,7 @@ https://www.blogcyberini.com/
                 summary = (!!summary)? summary.getAttribute("content") : null;
             }
             //altera o link do botão
-            linkedinLink = (!!summary)? linkedinLink + "&summary=" + summary : linkedinLink;
+            linkedinLink = (!!summary)? linkedinLink + "&summary=" + encodeURIComponent(summary) : linkedinLink;
             document.getElementById("linkedin-share-btt").href = linkedinLink;
         }, false);
     </script>
