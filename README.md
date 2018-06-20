@@ -5,3 +5,4 @@ Botões para compartilhamento de conteúdo nas redes sociais em HTML, CSS e Java
 * [**Botão do Twitter**](/Twitter)
 * [**Botão do Google+**](/Google%20Plus)
 * [**Botão do Pinterest**](/Pinterest)
+* [**Botão do LinkedIn**](/LinkedIn)
