@@ -30,7 +30,7 @@ https://www.blogcyberini.com/
     <script type="text/javascript">
         //Constrói a URL depois que o DOM estiver pronto
         document.addEventListener("DOMContentLoaded", function() {
-            var url = encodeURIComponent(window.location.href); //url
+            var url = window.location.href; //url
             var title = encodeURIComponent(document.title); //título
             var mailToLink = "mailto:?subject="+title;
             
