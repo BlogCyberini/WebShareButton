@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+GitHub: HenriqueIni
+https://www.blogcyberini.com/
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Botão de compartilhamento e-mail AddThis</title>
+    <!--
+        A imagem do botão está em Base64 e foi obtida no IconFinder (https://www.iconfinder.com/icons/764976/mail_media_social_square_icon)
+        Se preferir, coloque este CSS num arquivo externo.        
+    -->
+    <style>
+        .mail-share-button{
+            display: inline-block;            
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            background-size: 100% 100%; /* ou 'contain' */
+            background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA%2FPjxzdmcgaGVpZ2h0PSI2MHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA2MCA2MCIgd2lkdGg9IjYwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZXNjLz48ZGVmcy8%2BPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBpZD0ic29pY2FsIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI%2BPGcgaWQ9InNvY2lhbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg3My4wMDAwMDAsIC02MzguMDAwMDAwKSI%2BPGcgaWQ9InNsaWNlcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTczLjAwMDAwMCwgMTM4LjAwMDAwMCkiLz48ZyBmaWxsPSIjMzQ5OERCIiBpZD0ic3F1YXJlLWZsYXQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3My4wMDAwMDAsIDEzOC4wMDAwMDApIj48cGF0aCBkPSJNNzAyLjk5NTkzNyw1MDAgTDc1Ny4wMDQwNjMsNTAwIEM3NTguNjU4NjczLDUwMCA3NjAsNTAxLjMzNzMxIDc2MCw1MDIuOTk1OTM3IEw3NjAsNTU3LjAwNDA2MyBDNzYwLDU1OC42NTg2NzMgNzU4LjY2MjY5LDU2MCA3NTcuMDA0MDYzLDU2MCBMNzAyLjk5NTkzNyw1NjAgQzcwMS4zNDEzMjcsNTYwIDcwMCw1NTguNjYyNjkgNzAwLDU1Ny4wMDQwNjMgTDcwMCw1MDIuOTk1OTM3IEM3MDAsNTAxLjM0MTMyNyA3MDEuMzM3MzEsNTAwIDcwMi45OTU5MzcsNTAwIFoiIGlkPSJzcXVhcmUtNTgiLz48L2c%2BPGcgZmlsbD0iI0ZGRkZGRiIgaWQ9Imljb24iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4Mi4wMDAwMDAsIDE1MC4wMDAwMDApIj48cGF0aCBkPSJNNzIxLDUyMS40NjE1MzggTDczOC4zMDc2OTIsNTA2LjQ2MTUzOCBMNzAzLjY5MjMwOCw1MDYuNDYxNTM4IEw3MjEsNTIxLjQ2MTUzOCBaIE03MTYuMzI1MTc3LDUxOS44MDEwNTQgTDcyMSw1MjMuNjM4MjQgTDcyNS42MDE1ODEsNTE5LjgwMTA1NCBMNzM4LjMwNzY5Miw1MzAuNjkyMzA4IEw3MDMuNjkyMzA4LDUzMC42OTIzMDggTDcxNi4zMjUxNzcsNTE5LjgwMTA1NCBaIE03MDIuNTM4NDYyLDUyOS41Mzg0NjIgTDcwMi41Mzg0NjIsNTA3LjYxNTM4NSBMNzE1LjIzMDc2OSw1MTguNTc2OTIzIEw3MDIuNTM4NDYyLDUyOS41Mzg0NjIgWiBNNzM5LjQ2MTUzOCw1MjkuNTM4NDYyIEw3MzkuNDYxNTM4LDUwNy42MTUzODUgTDcyNi43NjkyMzEsNTE4LjU3NjkyMyBMNzM5LjQ2MTUzOCw1MjkuNTM4NDYyIFoiIGlkPSJtYWlsIi8%2BPC9nPjwvZz48L2c%2BPC9zdmc%2B"); /*Base 64 Icon by Xinh Studio*/
+            background-repeat: no-repeat;
+            background-position: center;
+        }        
+    </style>
+</head>
+<body>
+    <a href="" id="mail-share-btt" rel="nofollow" target="_blank" class="mail-share-button"></a>    
+    <!-- Você pode colocar este script num arquivo externo -->
+    <script type="text/javascript">
+        //Constrói a URL depois que o DOM estiver pronto
+        document.addEventListener("DOMContentLoaded", function() {
+            var url = encodeURIComponent(window.location.href); //url
+            var title = encodeURIComponent(document.title); //título
+            //link de compartilhamento do AddThis
+            var shareLinkAddThis = "https://api.addthis.com/oexchange/0.8/forward/email/offer?url="+url+"&title="+title;
+            document.getElementById("mail-share-btt").href = shareLinkAddThis;
+        }, false);
+    </script>
+</body>
+</html>
