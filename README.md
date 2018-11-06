@@ -7,3 +7,4 @@ Botões para compartilhamento de conteúdo nas redes sociais em HTML, CSS e Java
 * [**Botão do Pinterest**](/Pinterest)
 * [**Botão do LinkedIn**](/LinkedIn)
 * [**Botão de e-mail**](/Email)
+* [**Botão do Telegram**](/Telegram)
