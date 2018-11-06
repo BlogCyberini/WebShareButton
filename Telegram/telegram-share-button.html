@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+GitHub: HenriqueIni
+https://www.blogcyberini.com/
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Botão do Telegram</title>
+    <!--
+        A imagem do botão está em Base64 e foi obtida no IconFinder (https://www.iconfinder.com/icons/2609571/chat_media_social_telegram_icon)
+        Se preferir, coloque este CSS num arquivo externo.        
+    -->
+    <style>
+        .telegram-share-button{
+            display: inline-block;            
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            background-size: 100% 100%; /* ou 'contain' */
+            background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaWQ9IkxheWVyXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM1RUJFRTE7fQoJLnN0MXtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPjxnPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik01MTIsMzk3LjFjMCw2My41LTUxLjUsMTE0LjktMTE0LjksMTE0LjlIMTE0LjlDNTEuNSw1MTIsMCw0NjAuNSwwLDM5Ny4xVjExNC45QzAsNTEuNSw1MS41LDAsMTE0LjksMGgyODIuMiAgIEM0NjAuNSwwLDUxMiw1MS41LDUxMiwxMTQuOVYzOTcuMXoiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJNMzgzLjEsMTM0LjFMMTE2LjMsMjM4Yy04LjYsMy40LTguMSwxNS44LDAuOCwxOC40bDY3LjgsMjBsMjUuMyw4MC4zYzIuNiw4LjQsMTMuMywxMC45LDE5LjQsNC42bDM1LjEtMzUuOCAgIGw2OC44LDUwLjVjOC40LDYuMiwyMC40LDEuNiwyMi41LTguNmw0NS41LTIxNy44QzQwMy44LDEzOSwzOTMuMywxMzAuMSwzODMuMSwxMzQuMUwzODMuMSwxMzQuMUwzODMuMSwxMzQuMXogTTM0OS43LDE4Mi40ICAgTDIyNS44LDI5MmMtMS4yLDEuMS0yLDIuNi0yLjIsNC4ybC00LjgsNDIuNGMtMC4yLDEuNC0yLjEsMS42LTIuNSwwLjJsLTE5LjYtNjMuM2MtMC45LTIuOSwwLjMtNiwyLjktNy42bDE0Ni4zLTkwLjggICBDMzQ5LjIsMTc1LjIsMzUyLjcsMTc5LjgsMzQ5LjcsMTgyLjRMMzQ5LjcsMTgyLjRMMzQ5LjcsMTgyLjR6Ii8+PC9nPjwvc3ZnPg=="); /*Base 64 Icon by Hopnguyen Mr*/
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="" id="telegram-share-btt" rel="nofollow" target="_blank" class="telegram-share-button"></a>    
+    <!-- Você pode colocar este script num arquivo externo -->
+    <script type="text/javascript">
+        //Constrói a URL depois que o DOM estiver pronto
+        document.addEventListener("DOMContentLoaded", function() {
+            var url = encodeURIComponent(window.location.href); //url
+            var title = encodeURIComponent(document.title); //título
+            var telegramLink = "https://telegram.me/share/url?url=" + url + "&text=" + title;
+            document.getElementById("telegram-share-btt").href = telegramLink;
+        }, false);
+    </script>
+</body>
+
+</html>
