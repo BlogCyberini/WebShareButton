@@ -3,7 +3,7 @@ Botões para compartilhamento de conteúdo nas redes sociais em HTML, CSS e Java
 * [**Botão do WhatsApp**](/WhatsApp)
 * [**Botão do Facebook**](/Facebook)
 * [**Botão do Twitter**](/Twitter)
-* [~~**Botão do Google+**~~](/Google%20Plus) (a rede social será encerrada em agosto de 2019)
+* [~~**Botão do Google+**~~](/Google%20Plus) (a rede social foi encerrada em agosto de 2019)
 * [**Botão do Pinterest**](/Pinterest)
 * [**Botão do LinkedIn**](/LinkedIn)
 * [**Botão de e-mail**](/Email)
